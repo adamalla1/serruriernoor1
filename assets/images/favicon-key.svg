@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="keyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="50%" style="stop-color:#FFA500"/>
+      <stop offset="100%" style="stop-color:#B8860B"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGrad)" stroke="#06b6d4" stroke-width="2"/>
+  
+  <!-- Key shape -->
+  <g transform="translate(32,32) rotate(-45) translate(-18,-24)">
+    <!-- Key head (circle with hole) -->
+    <circle cx="18" cy="10" r="9" fill="url(#keyGrad)" stroke="#DAA520" stroke-width="1.5"/>
+    <circle cx="18" cy="10" r="4" fill="#0f172a" stroke="#DAA520" stroke-width="1"/>
+    
+    <!-- Key shaft -->
+    <rect x="15" y="18" width="6" height="28" rx="1" fill="url(#keyGrad)" stroke="#DAA520" stroke-width="1"/>
+    
+    <!-- Key teeth -->
+    <rect x="21" y="34" width="8" height="3" rx="0.5" fill="url(#keyGrad)" stroke="#DAA520" stroke-width="0.5"/>
+    <rect x="21" y="40" width="6" height="3" rx="0.5" fill="url(#keyGrad)" stroke="#DAA520" stroke-width="0.5"/>
+  </g>
+</svg>
